@@ -1,29 +1,44 @@
 <template>
   <v-app>
-    <v-app-bar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Jauger</span>
-        <span class="font-weight-light">Made by Imane B.</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-    </v-app-bar>
-
-    <v-content>
-      <HelloWorld/>
-    </v-content>
+    <Menu v-on:menu_item="menu_item($event)" v-on:connected="connected($event)"/>
+    <Accueil  v-if="item === `Accueil`"/>
+    <Quizz    v-if="item === `Quizz`"/>
+    <Admin v-if="connect && item === `Admin`"/>
+    <Bottom />
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
+import Menu from './component/Monmenu.vue'
+import Accueil from './component/Accueil.vue'
+import Quizz from './component/Quizz.vue'
+import Bottom from './component/Bottom.vue'
+import Admin from './component/Admin.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Menu,
+    Accueil,
+    Quizz,
+    Bottom,
+    Admin
   },
   data: () => ({
-    //
-  })
+    item: `Accueil`,
+    connect: false
+  }),
+  methods: {
+    menu_item: function (e) {
+      this.item = e
+    },
+    connected: function (e) {
+      this.connect = e
+    }
+  },
+  created () {
+  }
 }
 </script>
+
+<style scoped>
+</style>

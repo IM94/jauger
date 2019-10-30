@@ -1,0 +1,6 @@
+[
+    {"id":0,"max":{"value":-10000,"color":"black"},"min":{"value":10000,"color":"black"},"somme":0,"sommeCarre":0,"answers":0,"table":[]},
+    {"id":1,"max":{"value":-10000,"color":"black"},"min":{"value":10000,"color":"black"},"somme":0,"sommeCarre":0,"answers":0,"table":[]},
+    {"id":2,"max":{"value":-10000,"color":"black"},"min":{"value":10000,"color":"black"},"somme":0,"sommeCarre":0,"answers":0,"table":[]},
+    {"id":15,"max":{"value":-10000,"color":"black"},"min":{"value":10000,"color":"black"},"somme":0,"sommeCarre":0,"answers":0,"table":[]}
+]

@@ -1,0 +1,130 @@
+[
+    {
+        "id": 0,
+        "theme":[
+            {  
+                "id": 0,
+                "question": "Quand je suis face à un problème :",
+                "reponse":[ 
+                    {"text":"Je finis (presque) toujours par le résoudre", "point":15}, 
+                    {"text":"Je me décourage facilement", "point":-15},
+                    {"text":"Ni l’un ni l’autre", "point":5} 
+                ]
+            },
+            {  
+                "id": 1,
+                "question": "Je pense que la réussite :",
+                "reponse":[ 
+                    {"text":"Est donnée à tous ceux qui s’en donnent les moyens", "point":15},
+                    {"text":"Est surtout une question de chance", "point":-15},
+                    {"text":"Ni l’un ni l’autre", "point":5} 
+                ]
+            },
+            {  
+                "id": 2,
+                "question": "La phrase qui me parle le plus est :",
+                "reponse":[ 
+                    {"text":"« Quand on veut, on peut »", "point":15}, 
+                    {"text":"« C’est plus facile à dire qu’à faire »", "point":-15},
+                    {"text":"Ni l’un ni l’autre", "point":5} 
+                ]
+            }
+        ]    
+    },
+    {
+        "id": 1,
+        "theme":[
+            {  
+                "id": 0,
+                "question": "Après avoir passé un test noté dont je n’ai aucune idée du résultat :",
+                "reponse":[ 
+                    {"text":"Je ne m’en fais pas pour la suite", "point":15}, 
+                    {"text":"Je m’imagine ce qu’il va arriver si j’échoue", "point":-15},
+                    {"text":"Ni l’un ni l’autre", "point":5} 
+                ]
+            },
+            {  
+                "id": 1,
+                "question": "Après un échec :",
+                "reponse":[ 
+                    {"text":"C’est pas grave, je ferai mieux la prochaine fois", "point":15},
+                    {"text":"C’est vraiment décourageant", "point":-15},
+                    {"text":"Ni l’un ni l’autre", "point":5} 
+                ]
+            },
+            {  
+                "id": 2,
+                "question": "J’ai pas mal de défauts :",
+                "reponse":[ 
+                    {"text":"Mais je m’accepte comme je suis", "point":15}, 
+                    {"text":"Et j’en ai honte", "point":-15},
+                    {"text":"Ni l’un ni l’autre", "point":5} 
+                ]
+            }
+        ]    
+    },
+    {
+        "id": 2,
+        "theme":[
+            {  
+                "id": 0,
+                "question": "Un SDF me demande de l’argent et je refuse :",
+                "reponse":[ 
+                    {"text":"Je me sens quand même désolé(e) pour lui", "point":15}, 
+                    {"text":"Normal", "point":-15},
+                    {"text":"Ni l’un ni l’autre", "point":5} 
+                ]
+            },
+            {  
+                "id": 1,
+                "question": "Un inconnu porte deux gros sacs dans les escaliers du métro :",
+                "reponse":[ 
+                    {"text":"Je lui propose mon aide", "point":15},
+                    {"text":"Et alors ?", "point":-15},
+                    {"text":"Ni l’un ni l’autre", "point":5} 
+                ]
+            },
+            {  
+                "id": 2,
+                "question": "Un ami m’explique pourquoi il est triste :",
+                "reponse":[ 
+                    {"text":"Je ressens sa tristesse", "point":15}, 
+                    {"text":"Je me sens aussi bien que tout à l’heure (mais ça ne m’empêche pas de trouver le moyen de le consoler)", "point":-15},
+                    {"text":"Ni l’un ni l’autre", "point":5} 
+                ]
+            }
+        ]    
+    },
+    {
+        "id": 15,
+        "theme":[
+            {  
+                "id": 0,
+                "question": "Je me trouve en situation de panique :",
+                "reponse":[ 
+                    {"text":"J’essaie de garder mon calme et de trouver une solution au plus vite", "point":15}, 
+                    {"text":"Je panique", "point":-15},
+                    {"text":"Ni l’un ni l’autre", "point":5} 
+                ]
+            },
+            {  
+                "id": 1,
+                "question": "Quelqu’un que je n’aime pas me provoque :",
+                "reponse":[ 
+                    {"text":"Je ne me laisse pas atteindre si facilement", "point":15},
+                    {"text":"Je réagis au quart de tour tel un Marty Mcfly", "point":-15},
+                    {"text":"Ni l’un ni l’autre", "point":5} 
+                ]
+            },
+            {  
+                "id": 2,
+                "question": "Je suis sur scène devant une assemblée et on m’annonce une nouvelle très triste :",
+                "reponse":[ 
+                    {"text":"Je me contrôle tant que je suis sur scène", "point":15}, 
+                    {"text":"Je fonds en larmes", "point":-15},
+                    {"text":"Ni l’un ni l’autre", "point":5} 
+                ]
+            }
+        ]    
+    }
+]
