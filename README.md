@@ -1,3 +1,9 @@
+
+### Pour lire le projet en local : 
+```
+Cf commit "Code final"
+```
+
 # sejauger
 
 (pour se connecter: id=louis ; mdp=cherel)
