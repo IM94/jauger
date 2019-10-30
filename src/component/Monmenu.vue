@@ -45,7 +45,7 @@ export default {
   }),
   methods: {
     connexion: function () {
-      this.axios.post(`http://localhost:4000/api/connect`, { login: this.field.login, password: this.field.password })
+      this.axios.post(`/api/connect`, { login: this.field.login, password: this.field.password })
         .then(jsondata => {
           if (jsondata.data.connect) {
             this.field.id = `form`
