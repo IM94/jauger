@@ -91,7 +91,7 @@ export default {
     }
   },
   created () {
-    this.axios.get('http://localhost:4000/api/watcher')
+    this.axios.get('/api/login')
       .then(jsondata => {
         this.stat = jsondata.data.stat
         let i = 0
