@@ -65,7 +65,7 @@ export default {
       this.dataServerEmission()
     },
     dataServerEmission: function () {
-      this.axios.post('http://localhost:4000/api/quizz/reponse', { id: this.value, reponse: this.select, score: this.score })
+      this.axios.post('/api/quizz/reponse', { id: this.value, reponse: this.select, score: this.score })
         .catch(error => {
           console.log(error)
         })
@@ -73,7 +73,7 @@ export default {
   },
   props: ['value', 'page'],
   created () {
-    this.axios.post('http://localhost:4000/api/quizz/question', { id: this.value })
+    this.axios.post('/api/quizz/question', { id: this.value })
       .then(jsondata => {
         this.getApi(jsondata.data.quizz)
       }).catch(error => {
