@@ -31,7 +31,7 @@ export default {
     }
   },
   created () {
-    this.axios.get('http://localhost:4000/api/quizz/list')
+    this.axios.get('/api/quizz/list')
       .then(jsondata => {
         this.list = jsondata.data.quizz
       }).catch(error => {
