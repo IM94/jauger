@@ -18,9 +18,11 @@
 
 3) npm install axios --save
  npm install --save vue-axios
-
-
-
+ npm install -g nodemon
+ npm install --save-dev nodemon
+ npm install mongoose-morgan
+ npm install cors
+ npm install express-session
 
 
 ## Project setup
@@ -46,6 +48,11 @@ npm run test
 ### Lints and fixes files
 ```
 npm run lint
+```
+
+### Au lancement du prog, split terminal et taper: 
+```
+nodemon server/server.js
 ```
 
 ### Customize configuration
