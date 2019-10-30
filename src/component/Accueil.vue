@@ -91,7 +91,7 @@ export default {
     }
   },
   created () {
-    this.axios.get('/api/login')
+    this.axios.get('/api/watcher')
       .then(jsondata => {
         this.stat = jsondata.data.stat
         let i = 0
