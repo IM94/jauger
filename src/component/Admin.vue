@@ -155,12 +155,12 @@ export default {
     save: function () {
       this.backgroundColor.action = 'sauvegarder'
       this.dialog.tmp.save.loading = true
-      this.axios.post('http://localhost:4000/api/save')
+      this.axios.post('/api/save')
         .then(jsondata => { setTimeout(() => (this.dialog.tmp.save.loading = false), 1000) })
         .catch(error => { console.log(error) })
     },
     getData: function () {
-      this.axios.get('http://localhost:4000/api/watcher')
+      this.axios.get('/api/watcher')
         .then(jsondata => {
           this.stat = jsondata.data.stat
           let i = 0
@@ -177,10 +177,10 @@ export default {
       if (this.backgroundColor.action === `ajouter`) {
         this.dialog.list.ajouter = true
       } else if (this.backgroundColor.action === `supprimer`) {
-        this.axios.post('http://localhost:4000/api/quizz/theme/id', { theme: this.stat[this.dialog.tmp.id].theme })
+        this.axios.post('/api/quizz/theme/id', { theme: this.stat[this.dialog.tmp.id].theme })
           .then(jsondata => {
             const id = jsondata.data.id
-            this.axios.post('http://localhost:4000/api/supprimer', { id: id })
+            this.axios.post('/api/supprimer', { id: id })
               .then(jsondata => {
                 this.getData()
               }).catch(error => console.log(error))
@@ -191,10 +191,10 @@ export default {
       if (this.backgroundColor.action === `ajouter`) {
         this.dialog.tmp.ajouter = parseInt(this.dialog.tmp.ajouter, 10)
         if (!isNaN(this.dialog.tmp.ajouter)) {
-          this.axios.post('http://localhost:4000/api/quizz/theme/id', { theme: this.stat[this.dialog.tmp.id].theme })
+          this.axios.post('/api/quizz/theme/id', { theme: this.stat[this.dialog.tmp.id].theme })
             .then(jsondata => {
               const id = jsondata.data.id
-              this.axios.post('http://localhost:4000/api/quizz/reponse', { id: id, score: { value: this.dialog.tmp.ajouter, color: 'black' } })
+              this.axios.post('/api/quizz/reponse', { id: id, score: { value: this.dialog.tmp.ajouter, color: 'black' } })
                 .then(jsondata => {
                   this.getData()
                   this.dialog.tmp.ajouter = 0
