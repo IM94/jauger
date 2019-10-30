@@ -53,7 +53,7 @@ export default {
       { text: 'variance', id: 3 },
       { text: 'reponse obtenue', id: 4 }
     ],
-    description: `Le site qui te permets de répondre a notre site et d'en voir la statistique`
+    description: `Le site qui te permet de répondre aux quizz et de voir les statistiques`
   }),
   methods: {
     getElement: function (id, id2) {
