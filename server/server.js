@@ -18,6 +18,8 @@ app.use(cors({
   credentials: true,
   origin: 'http://localhost:8080'
 }))
+const path = require('path')
+app.use(express.static(path.join(__dirname, 'dist/')))
 const users = [
   { ID: `louis`, MDP: `cherel` }
 ]
