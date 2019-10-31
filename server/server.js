@@ -14,10 +14,9 @@ app.use(session({
 }))
 app.use(morgan('dev'))
 app.use(bodyParser.json())
-app.use(cors({
-  credentials: true,
-  origin: 'http://localhost:8080'
-}))
+app.use(cors())
+const path = require('path')
+app.use(express.static(path.join(__dirname, 'dist/')))
 const users = [
   { ID: `louis`, MDP: `cherel` }
 ]
